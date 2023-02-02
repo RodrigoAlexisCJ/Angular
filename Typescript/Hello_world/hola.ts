@@ -1,2 +1,2 @@
-var texto:String="Hola MUndo"
+var texto:string="Hola MUndo"
 console.log(texto)
