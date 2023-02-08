@@ -2,6 +2,15 @@
 ## Instalation
 1. Download and install **Node.js** via this [link](https://nodejs.org/es/download/)
 
+!!!!!!To verify if the installation was correct, type in your Command Prompt(Windows) to check the **Node.js**  and **npm** version
+
+``` 
+node --version
+```
+and
+``` 
+npm --version
+```
 2. Donwload and install **TypeScript**, visit this [link](https://www.typescriptlang.org/) or type in your Command Prompt (Windows)
 
 ``` 
@@ -12,13 +21,19 @@ npm install -g typescript
 ``` 
 npm install -g @angular/cli
 ```
-if tou want a different version or Angular-Cli you can
+!!!!!!If you want a different version of **Angular-Cli** you can type instead
 ``` 
 npm install -g @angular/cli@{version}
 
 example
 
 npm install -g @angular/cli@7.0.3
+```
+
+!!!!!!To verify if the installation was correct, type in your Command Prompt(Windows) to check the **Angular-Cli** version
+
+``` 
+ng version
 ```
 4. Download and install an Editor:
 - __[Atom](https://atom.io/)__
