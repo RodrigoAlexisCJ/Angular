@@ -1,4 +1,4 @@
-# Angular 8-)
+# Angular 
 ## Instalation
 1. Download and install **Node.js** via this [link](https://nodejs.org/es/download/)
 
