@@ -39,3 +39,23 @@ ng version
 - __[Atom](https://atom.io/)__
 - __[Visual Studio Code](https://code.visualstudio.com/docs)__
 - __[Sublime Text](https://www.sublimetext.com)__
+
+## TypeScript 
+- To transcribe a **TypeScript** file into a **Javascript** type on your Command Prompt(Windows)
+``` 
+tsc {file with extension}
+example
+tsc Hola.ts
+```
+and to meka it run type
+``` 
+node {file without extension}
+example
+node Hola
+```
+### Example of a Typescript file
+``` ts
+var texto: string = "Hola"
+console.log(texto)
+```
+
