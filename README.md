@@ -47,7 +47,7 @@ tsc {file with extension}
 example
 tsc Hola.ts
 ```
-and to meka it run type
+and to make it run type
 ``` 
 node {file without extension}
 example
@@ -58,4 +58,18 @@ node Hola
 var texto: string = "Hola"
 console.log(texto)
 ```
-
+## Angular 
+``` 
+ng help
+```
+- Create a new project: select your folder file and type on your Command Prompt(Windows)
+``` 
+ng new {file-name}
+example
+ng new todo
+```
+- Build and run an **Angular** application (you need to be inside the Project folder)
+``` 
+ng serve
+```
+!!!!!! To stop an **Angular** Application, type Ctrl+C to end the ongoing process (Windows)
