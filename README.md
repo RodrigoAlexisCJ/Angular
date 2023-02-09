@@ -73,3 +73,8 @@ ng new todo
 ng serve
 ```
 !!!!!! To stop an **Angular** Application, type Ctrl+C to end the ongoing process (Windows)
+
+- To check if exist any coding standar violation type `ng lint` on your Command Prompt(Windows)
+- If you type `ng build` on your Command Prompt(Windows), it creates files that make easy the deployment on a web server, like test enrollment, production, etc. (so you don´t need to attatch all the files to make run the **Angular** Application)
+- Type `ng test` to run the unit tests on the **Angula** Application
+- Type `ng e2e` to run the entire **Angular** Application
