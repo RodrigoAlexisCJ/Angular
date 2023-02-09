@@ -1,5 +1,5 @@
 # Angular 
-## Instalation
+## Installation
 1. Download and install **Node.js** via this [link](https://nodejs.org/es/download/)
 
 !!!!!!To verify if the installation was correct, type in your Command Prompt(Windows) to check the **Node.js**  and **npm** version
