@@ -2,7 +2,7 @@
 ## Installation
 1. Download and install **Node.js** via this [link](https://nodejs.org/es/download/)
 
-!!!!!!To verify if the installation was correct, type in your Command Prompt(Windows) to check the **Node.js**  and **npm** version
+!!! To verify if the installation was correct, type in your Command Prompt(Windows) to check the **Node.js**  and **npm** version
 
 ``` 
 node --version
@@ -30,7 +30,7 @@ example
 npm install -g @angular/cli@7.0.3
 ```
 
-!!!!!!To verify if the installation was correct, type in your Command Prompt(Windows) to check the **Angular-Cli** version
+!!! To verify if the installation was correct, type in your Command Prompt(Windows) to check the **Angular-Cli** version
 
 ``` 
 ng version
@@ -78,3 +78,9 @@ ng serve
 - If you type `ng build` on your Command Prompt(Windows), it creates files that make easy the deployment on a web server, like test enrollment, production, etc. (so you don´t need to attatch all the files to make run the **Angular** Application)
 - Type `ng test` to run the unit tests on the **Angula** Application
 - Type `ng e2e` to run the entire **Angular** Application
+- Type `ng generate component {component name}` to create a new component inside your **Angular** Application
+example
+``` 
+ng generate component welcome 
+```
+!!! This commando don´t have rollback so you need to be a 100% that everything is right before execute it 
