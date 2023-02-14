@@ -1,4 +1,6 @@
-<small *ngIf="invalidLogin">{{errorMessage}}</small>
+<h1>Login!</h1>
+<div class="container">
+<div *ngIf="invalidLogin">{{errorMessage}}</div>
 <div>
 <!--User Name: <input type="text" name="username" value="username"> -->
 User Name: <input type="text" name="username" [(ngModel)]="username">
@@ -9,4 +11,5 @@ User name: {{username}}
 <br>-->
 <br>
 <button (click)=handleLogin()>Login</button>
+</div>
 </div>
