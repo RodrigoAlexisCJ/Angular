@@ -84,3 +84,15 @@ example
 ng generate component welcome 
 ```
 !!! This commando don´t have rollback so you need to be a 100% that everything is right before execute it 
+- Type `ng generate service {service name}` to create a new service inside your **Angular** Application
+example
+``` 
+ng generate service hardcodedAuthentication 
+```
+!!! This commando don´t have rollback so you need to be a 100% that everything is right before execute it 
+- Type `ng generate service {service folder}/{service name}` to create a new service inside a folder into your **Angular** Application
+example
+``` 
+ng generate service service/hardcodedAuthentication 
+```
+!!! Remember create a new folder for any new service since if you do not do the service will be generated in the root folder
