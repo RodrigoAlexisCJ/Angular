@@ -33,7 +33,7 @@ export class LoginComponent implements OnInit{
     {
       this.invalidLogin=true;
     }
-    console.log(this.username + " & "+ this.password + " & " + this.invalidLogin);
+    //console.log(this.username + " & "+ this.password + " & " + this.invalidLogin);
   }
 
 }

@@ -7,9 +7,11 @@ export class HardcodedAuthenticationService {
 
   constructor() { }
   authenticate(username:string,password:string){
+    //console.log('before '+this.isUserLoggedIn());
     if(username==="pashu" && password==="dummy"){
       //Redirect to Welcome Page
-      sessionStorage.setItem('athenticatedUser',username);
+      sessionStorage.setItem('authenticatedUser',username);
+      //console.log('after '+this.isUserLoggedIn());
       return true;
     }
     else
@@ -17,4 +19,11 @@ export class HardcodedAuthenticationService {
       return false;
     }
   }
+   isUserLoggedIn(){
+    let user = sessionStorage.getItem('authenticatedUser');
+    return !(user === null)
+   }
+   logout(){
+    sessionStorage.removeItem('authenticatedUser');
+   }
 }
