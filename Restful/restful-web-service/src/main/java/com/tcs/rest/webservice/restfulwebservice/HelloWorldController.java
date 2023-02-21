@@ -18,7 +18,8 @@ public class HelloWorldController {
 //	hello world bean
 	@GetMapping(value="/hello-world-bean")
 	public ResponseEntity<HelloWorldBean> helloWorldBean() {
-		return new ResponseEntity<>( new HelloWorldBean("Heeeeelloooooo World Bean"),HttpStatus.OK);
+		throw new RuntimeException("Some Error has happened! Contact Support");
+//		return new ResponseEntity<>( new HelloWorldBean("Heeeeelloooooo World Bean"),HttpStatus.OK);
 	}
 	
 	@GetMapping(value="/hello/{name}")

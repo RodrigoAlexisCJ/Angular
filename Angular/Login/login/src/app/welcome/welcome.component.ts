@@ -22,10 +22,18 @@ export class WelcomeComponent implements OnInit{
     //console.log(this.route.snapshot.params['name'])
     this.name= this.route.snapshot.params['name']
   }
+  
   getWelcomeMessage(){
     console.log(this.welcomeData.executeHelloWorldBeanService());
+
     this.welcomeData.executeHelloWorldBeanService().subscribe(
-      response=> this.handleSuccessfulResponse(response));
+      //next=> this.handleSuccessfulResponse(next), 
+      //error => this.handleErrorResponse(error)
+      //{next: this.handleSuccessfulResponse.bind(this), 
+      //error: this.handleErrorResponse.bind(this)}
+      {next: (n)=>this.handleSuccessfulResponse(n), 
+      error: (e)=>this.handleErrorResponse(e)}
+      );
       console.log('last line of getWelcomeMessage')
     //this.welcomeData.executeHelloWorldBeanService();
   }
@@ -34,6 +42,13 @@ export class WelcomeComponent implements OnInit{
     console.log(response);
     console.log(response.message);
     this.welcomeMessageFrom=response.message;
+  }
+
+  handleErrorResponse(error:any){
+    console.log(error);
+    console.log(error.error);
+    console.log(error.error.message);
+    this.welcomeMessageFrom = error.error.message;
   }
 
 }
