@@ -1,4 +1,4 @@
-package com.tcs.rest.webservice.restfulwebservice;
+package com.tcs.rest.webservice.restfulwebservice.helloworld;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -18,13 +18,19 @@ public class HelloWorldController {
 //	hello world bean
 	@GetMapping(value="/hello-world-bean")
 	public ResponseEntity<HelloWorldBean> helloWorldBean() {
-		throw new RuntimeException("Some Error has happened! Contact Support");
-//		return new ResponseEntity<>( new HelloWorldBean("Heeeeelloooooo World Bean"),HttpStatus.OK);
+//		throw new RuntimeException("Some Error has happened! Contact Support");
+		return new ResponseEntity<>( new HelloWorldBean("Heeeeelloooooo World Bean"),HttpStatus.OK);
 	}
 	
 	@GetMapping(value="/hello/{name}")
 	public ResponseEntity<String> helloWorldPathVariable(@PathVariable String name){
 //		return new ResponseEntity<>("Hello "+ name,HttpStatus.OK);
 		return new ResponseEntity<>(String.format("Hello, %s", name),HttpStatus.OK);
+	}
+	@GetMapping(value="/hello-wold/path-var/{name}")
+	public ResponseEntity<HelloWorldBean> helloWorldBeanPathVariable(@PathVariable String name){
+//		return new ResponseEntity<>("Hello "+ name,HttpStatus.OK);
+		throw new RuntimeException("Some Error has happened! Contact Support");
+		//return new ResponseEntity<>(new HelloWorldBean(String.format("Hello, %s", name)),HttpStatus.OK);
 	}
 }
